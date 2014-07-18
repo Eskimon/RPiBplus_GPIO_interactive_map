@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>RaspberryPi B+ GPIO interactive map</title>
+        <link type="text/css" rel="stylesheet" href="rpibplus_style.css" />
+    </head>
+    <body>
+	    <div id="interactiveMapContainer">
+		    <table class="data">
+	    		<tr>
+	    			<th>Pin #</th>
+	    			<th>Name</th>
+	    			<th>Alt. Name</th>
+	    		</tr>
+	    		<tr id="trdatas"><td> - </td><td> - </td><td> - </td></tr>
+		    </table>
+            <p id="imageContainer">
+	    		<img src="raspberryPiBplus.jpg" id="bgPic">
+            </p> <br>
+            <p id="optionsReveal">
+		    	<input type="checkbox" id="inputfreePin"> <label for="inputfreePin">Show available Pin</label><br>
+			    <input type="checkbox" id="inputSPIPin"> <label for="inputSPIPin">Show SPI Pin</label><br>
+			    <input type="checkbox" id="inputI2CPin"> <label for="inputI2CPin">Show I2C Pin (DO NOT USE)</label><br>
+			    <input type="checkbox" id="inputpowerPin"> <label for="inputpowerPin">Show power related Pin</label><br>
+			    <input type="checkbox" id="inputdonotusePin"> <label for="inputdonoteusePin">Show "DO NOT USE" Pins</label><br>
+		    </p>
+	    </div>
+	    <script type="text/javascript" src="rpibplus_script.js"></script>
+    </body>
+</html>

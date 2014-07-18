@@ -1,0 +1,60 @@
+table.data {
+	font-size: 10px;
+	text-align: center;
+}
+
+table.data th {
+  font-weight: bold;
+  background: #eee;
+  width: 12.5%;
+}
+
+.headerPin {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+}
+
+.headerPin:hover {
+	cursor: pointer;
+}
+
+.SPIPin, .I2CPin {
+	background-color: yellow;
+	opacity: 0;
+}
+.donotusePin {
+	background-color: red;
+	opacity: 0;
+}
+.freePin {
+	background-color: white;
+	opacity: 0;
+}
+.powerPin {
+	background-color: blue;
+	opacity: 0;
+}
+
+.opacity {
+	opacity: 0.5;
+}
+
+.legend {
+	display: inline-block;
+	position: relative;
+	opacity: 1;
+	top: 6px;
+}
+
+.SPIPin:hover, .I2CPin:hover, .donotusepin:hover, .freePin:hover, .powerPin:hover {
+	opacity: 1;
+}
+
+p {
+	margin: 0px;
+}
